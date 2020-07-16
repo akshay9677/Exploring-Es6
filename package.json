@@ -1,0 +1,14 @@
+{
+  "name": "exploring-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Chapter4.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
