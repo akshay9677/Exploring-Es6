@@ -1,4 +1,4 @@
-const obj = require("./Chapter6StringFeatures");
+const obj = require("./Chapter6");
 
 describe("New String Features in ES6", () => {
   test("Starts with method", () => {
