@@ -13,8 +13,8 @@ const obj = {
     var a = yield;
     return a;
   },
-  genCoroutines: function* () {
-    var x = yield this.timeoutFunc("Hello World", 2000);
+  genCoroutines: function* (ak) {
+    var x = yield this.timeoutFunc(ak, 2000);
   },
   timeoutFunc: function (val, ms) {
     let a;

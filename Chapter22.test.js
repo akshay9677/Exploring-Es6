@@ -21,7 +21,7 @@ describe("Generators in javascript", () => {
       var [a, b, c] = obj.genExample();
       expect([a, b, c]).toStrictEqual(["a", "b", "c"]);
     });
-    test("In recursions", () => {
+    test("Calling other generators ", () => {
       var arr = [];
       for (const i of obj.genRecursion()) {
         arr.push(i);
@@ -38,9 +38,9 @@ describe("Generators in javascript", () => {
   });
   describe("Roles of generators - Cooperative multi tasking", () => {
     test("Fetch data by using generators", () => {
-      const itr = obj.genCoroutines();
+      const itr = obj.genCoroutines("Hello World");
       let a = itr.next();
-      a.value.then((value) => {
+      return a.value.then((value) => {
         expect(value).toBe("Hello World");
       });
     });
